@@ -1,0 +1,72 @@
+Last login: Sat Jan  3 13:46:00 on console
+namul@Namuls-MacBook-Air ~ % gh --version
+zsh: command not found: gh
+namul@Namuls-MacBook-Air ~ % brew intall gh
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+
+Error: Invalid usage: Unknown command: brew intall
+namul@Namuls-MacBook-Air ~ % brew install gh
+==> Auto-updating Homebrew...
+Adjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with
+`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+Error: Failed to download https://formulae.brew.sh/api/formula.jws.json!
+==> Homebrew collects anonymous analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics have been recorded yet (nor will be during this `brew` run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/cask).
+
+✔︎ JSON API formula.jws.json                                                                  Downloaded   32.0MB/ 32.0MB
+==> Fetching downloads for: gh
+✔︎ Bottle Manifest gh (2.83.2)                                                                Downloaded    7.3KB/  7.3KB
+✔︎ Bottle gh (2.83.2)                                                                         Downloaded   16.8MB/ 16.8MB
+==> Pouring gh--2.83.2.arm64_tahoe.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gh/2.83.2: 221 files, 53.6MB
+==> Running `brew cleanup gh`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Caveats
+zsh completions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+namul@Namuls-MacBook-Air ~ % gh auth logout
+not logged in to any hosts
+namul@Namuls-MacBook-Air ~ % gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 450B-1A32
+Press Enter to open https://github.com/login/device in your browser... 
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as devnaymul247
+namul@Namuls-MacBook-Air ~ % 
